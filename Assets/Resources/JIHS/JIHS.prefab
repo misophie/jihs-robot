@@ -158,7 +158,7 @@ MonoBehaviour:
     hasUpgradedBrainParametersWithActionSpec: 1
   m_Model: {fileID: 0}
   m_InferenceDevice: 0
-  m_BehaviorType: 0
+  m_BehaviorType: 1
   m_BehaviorName: Agent
   TeamId: 1
   m_UseChildSensors: 0
@@ -206,10 +206,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2902496c0120472b90269f94a0aec7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Record: 0
+  Record: 1
   NumStepsToRecord: 0
-  DemonstrationName: 
-  DemonstrationDirectory: 
+  DemonstrationName: Test2
+  DemonstrationDirectory: Demo
 --- !u!114 &4275725191425983411
 MonoBehaviour:
   m_ObjectHideFlags: 0

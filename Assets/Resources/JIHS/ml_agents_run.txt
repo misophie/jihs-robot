@@ -1,0 +1,11 @@
+mlagents-learn config/agent_config.yaml --run-id=test1
+
+gail in yaml: beat recorded version
+
+demonstration recorded on prefab to record the performance for gail
+
+behaviour type : heuristic only in prefab
+
+mean reward ~1 for gail recording
+
+when training : record off, behaviour type to default

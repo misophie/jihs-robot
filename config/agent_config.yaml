@@ -24,6 +24,11 @@ behaviors:
     #    demo_path: Assets/Demonstrations/YourDemoName.demo
     #    encoding_size: 64
     #    use_actions: true
+
+    # behaviourial_cloning: 
+    #    strength: 0.1
+    #    demo_path: Assets/Demonstrations/YourDemoName.demo
+
     time_horizon: 64
     max_steps: 10000000
     summary_freq: 50000
