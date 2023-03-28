@@ -140,14 +140,14 @@ public class JIHS : CogsAgent
         
         if (collision.gameObject.CompareTag("HomeBase") && collision.gameObject.GetComponent<HomeBase>().team == GetTeam())
         {
-            //Add rewards here
+            // Add rewards here
             if (carriedTargets.Count > 0) {
                 AddReward(rewardDict["target-in-base"] * carriedTargets.Count);
             }
-            else {
-                if (myBase.GetComponent<HomeBase>().GetCaptured() > targets.Length/2) AddReward(rewardDict["protect"]);
-                else AddReward(rewardDict["dropped-no-targets"]);
-            }
+            // else {
+            //     if (myBase.GetComponent<HomeBase>().GetCaptured() > targets.Length/2) AddReward(rewardDict["protect"]);
+            //     else AddReward(rewardDict["dropped-no-targets"]);
+            // }
 
         }
         base.OnTriggerEnter(collision);
@@ -179,18 +179,17 @@ public class JIHS : CogsAgent
         rewardDict = new Dictionary<string, float>();
 
         rewardDict.Add("frozen", -1f);
-        rewardDict.Add("shooting-laser", -1f);
+        rewardDict.Add("shooting-laser", -0.1f);
         rewardDict.Add("hit-enemy", 1f);
         rewardDict.Add("dropped-one-target", -1f);
         rewardDict.Add("dropped-targets", -2f);
         rewardDict.Add("touching-wall", -0.5f);
-        rewardDict.Add("dropped-no-targets", 0.5f);
-        rewardDict.Add("targets-not-in-base", 1f);
-        // rewardDict.Add("target-in-base", 1f);
-        // rewardDict.Add("protect", 0.5f);
+        rewardDict.Add("dropped-no-targets", 0.1f);
+        rewardDict.Add("targets-not-in-base", 2f);
+        rewardDict.Add("target-in-base", 2f);
+        rewardDict.Add("get-out", -0.1f);
     }
     
-    // private void MovePlayer(int forwardAxis, int rotateAxis, int shootAxis, int goToTargetAxis, int goToBaseAxis, int goToEnemyBase)
     private void MovePlayer(int forwardAxis, int rotateAxis, int shootAxis, int goToTargetAxis, int goToBaseAxis)
     //TODO-2: Add goToBase as an argument to this function ^
     {
@@ -244,10 +243,6 @@ public class JIHS : CogsAgent
         //go to the nearest target
         if (goToTargetAxis == 1){
             GoToNearestTarget();
-        }
-
-        if (goToTargetAxis == 2) {
-            GoToEnemyTarget();
         }
 
         //TODO-2: Implement the case for goToBaseAxis

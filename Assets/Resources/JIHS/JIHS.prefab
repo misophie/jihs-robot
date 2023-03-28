@@ -208,8 +208,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Record: 1
   NumStepsToRecord: 0
-  DemonstrationName: 
-  DemonstrationDirectory: 
+  DemonstrationName: test3
+  DemonstrationDirectory: Demonstration
 --- !u!114 &4275725191425983411
 MonoBehaviour:
   m_ObjectHideFlags: 0

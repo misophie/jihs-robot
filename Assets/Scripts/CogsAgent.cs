@@ -94,7 +94,7 @@ public class CogsAgent : Agent
         
         if (turnSpeed < 0) {
             turnSpeed = 0;
-         }
+        }
 
 
         if (rBody.velocity.sqrMagnitude > 25f) // slow it down

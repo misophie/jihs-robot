@@ -18,12 +18,14 @@ behaviors:
       extrinsic:
         gamma: 0.99
         strength: 1.0
-    #  gail:
-    #    strength: 0.5
-    #    gamma: 0.9
-    #    demo_path: Assets/Demonstrations/YourDemoName.demo
-    #    encoding_size: 64
-    #    use_actions: true
+    gail:
+      strength: 0.5
+      gamma: 0.9
+      demo_path: Assets/Resources/JIHS/test3.demo 
+      # demo_path: C:\Users\sooph\Downloads\lab7to9-robot-tournament-main\Assets\Resources\JIHS\test3.demo
+      encoding_size: 64
+      use_actions: true
+  
     time_horizon: 64
     max_steps: 10000000
     summary_freq: 50000
