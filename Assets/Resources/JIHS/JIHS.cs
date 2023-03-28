@@ -185,7 +185,7 @@ public class JIHS : CogsAgent
         rewardDict.Add("dropped-targets", -2f);
         rewardDict.Add("touching-wall", -0.5f);
         rewardDict.Add("dropped-no-targets", 0.1f);
-        rewardDict.Add("targets-not-in-base", 2f);
+        rewardDict.Add("targets-not-in-base", 1f);
         rewardDict.Add("target-in-base", 2f);
         rewardDict.Add("get-out", -0.1f);
     }
