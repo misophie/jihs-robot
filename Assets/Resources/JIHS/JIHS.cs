@@ -184,7 +184,12 @@ public class JIHS : CogsAgent
 
     // True if robot should protect (more than half of the targets are in base), false otherwise
     private bool protect() {
-        return myBase.GetComponent<HomeBase>().GetCaptured() > targets.Length/2;
+        bool targetNotInBase = false;
+        foreach (GameObject target in targets) {
+            // !!! not sure if its 0, double check
+            if (collision.gameObject.GetComponent<Target>().GetInBase() != 0) targetNotInBase = true;
+        }
+        return myBase.GetComponent<HomeBase>().GetCaptured() > targets.Length/2 && !targetNotInBase;
     }
 
      private void AssignBasicRewards() {
@@ -206,7 +211,7 @@ public class JIHS : CogsAgent
         rewardDict.Add("protect-in-base", 0.1f);
         rewardDict.Add("protect-laser", 0.5f);
         rewardDict.Add("offense-in-base", -0.2f);
-        rewardDict.Add("offense-collecting-targets", 2.5f);
+        rewardDict.Add("offense-collecting-targets", 1.5f);
 
     }
     

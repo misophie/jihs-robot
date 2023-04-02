@@ -346,3 +346,8 @@ Agent 1 wins by carry
 Agent 1 wins by capture
 Agent 1 wins by capture
 Agent 2 wins by capture
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 72a8 -> priority: 1 
+  Thread -> id: 7d40 -> priority: 1 
+  Thread -> id: 76ac -> priority: 1 
+  Thread -> id: 27b4 -> priority: 1 

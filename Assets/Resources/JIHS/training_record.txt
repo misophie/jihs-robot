@@ -1,5 +1,5 @@
 mlagents-learn config/agent_config.yaml --run-id=test1 --env="Build/Final Project Testing V2" --num-envs=2
-mlagents-learn config/agent_config.yaml --run-id=test9 --env="Build2/Final Project Testing V2" --num-envs=2
+mlagents-learn config/agent_config.yaml --run-id=test10 --env="Build2/Final Project Testing V2" --num-envs=2    
 
 gail in yaml: beat recorded version
 
@@ -23,3 +23,5 @@ Agent.onnx is based on test8 - honestly not too bad? sometimes there's no moveme
 
 Build2 uses protect and offense incentives
 test9 - GAIL + BC (both test3) + 2 envs (ran into warning: Your environment contains multiple teams, but PPOTrainer doesn't support adversarial games. Enable self-play to train adversarial games.)
+test10 - GAIL + BC (both test3) + 2 envs (offense-collecting-targets = 1.5, test9 had 2.5, redefined protect to make sure there's no targets that aren't in a base)
+Agent1.onnx is based on test9 - worse than Agent.onnx, wasn't trained too long
