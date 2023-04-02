@@ -1,0 +1,348 @@
+Mono path[0] = 'C:/Users/sooph/Downloads/lab7to9-robot-tournament-main/Build2/Final Project Testing V2_Data/Managed'
+Mono config path = 'C:/Users/sooph/Downloads/lab7to9-robot-tournament-main/Build2/MonoBleedingEdge/etc'
+Initialize engine version: 2020.3.44f1 (7f159b6136da)
+[Subsystems] Discovering subsystems at path C:/Users/sooph/Downloads/lab7to9-robot-tournament-main/Build2/Final Project Testing V2_Data/UnitySubsystems
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) Iris(R) Plus Graphics (ID=0x8a5a)
+    Vendor:   
+    VRAM:     3967 MB
+    Driver:   31.0.101.1999
+Begin MonoManager ReloadAssembly
+- Completed reload, in  0.179 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.226100 ms
+Fallback handler could not load library C:/Users/sooph/Downloads/lab7to9-robot-tournament-main/Build2/Final Project Testing V2_Data/Mono/libcoreclr.so
+Fallback handler could not load library C:/Users/sooph/Downloads/lab7to9-robot-tournament-main/Build2/Final Project Testing V2_Data/Mono/libcoreclr.so.dll
+Fallback handler could not load library C:/Users/sooph/Downloads/lab7to9-robot-tournament-main/Build2/Final Project Testing V2_Data/Mono/libcoreclr.so
+Fallback handler could not load library C:/Users/sooph/Downloads/lab7to9-robot-tournament-main/Build2/Final Project Testing V2_Data/Mono/libdl.so
+Fallback handler could not load library C:/Users/sooph/Downloads/lab7to9-robot-tournament-main/Build2/Final Project Testing V2_Data/Mono/libdl.so.dll
+Fallback handler could not load library C:/Users/sooph/Downloads/lab7to9-robot-tournament-main/Build2/Final Project Testing V2_Data/Mono/libdl.so
+Fallback handler could not load library C:/Users/sooph/Downloads/lab7to9-robot-tournament-main/Build2/Final Project Testing V2_Data/Mono/libSystem.dylib
+Fallback handler could not load library C:/Users/sooph/Downloads/lab7to9-robot-tournament-main/Build2/Final Project Testing V2_Data/Mono/libSystem.dylib.dll
+Fallback handler could not load library C:/Users/sooph/Downloads/lab7to9-robot-tournament-main/Build2/Final Project Testing V2_Data/Mono/libSystem.dylib
+Fallback handler could not load library C:/Users/sooph/Downloads/lab7to9-robot-tournament-main/Build2/Final Project Testing V2_Data/Mono/libcoreclr.so
+Fallback handler could not load library C:/Users/sooph/Downloads/lab7to9-robot-tournament-main/Build2/Final Project Testing V2_Data/Mono/libcoreclr.so.dll
+Fallback handler could not load library C:/Users/sooph/Downloads/lab7to9-robot-tournament-main/Build2/Final Project Testing V2_Data/Mono/libcoreclr.so
+Fallback handler could not load library C:/Users/sooph/Downloads/lab7to9-robot-tournament-main/Build2/Final Project Testing V2_Data/Mono/libdl.so
+Fallback handler could not load library C:/Users/sooph/Downloads/lab7to9-robot-tournament-main/Build2/Final Project Testing V2_Data/Mono/libdl.so.dll
+Fallback handler could not load library C:/Users/sooph/Downloads/lab7to9-robot-tournament-main/Build2/Final Project Testing V2_Data/Mono/libdl.so
+Fallback handler could not load library C:/Users/sooph/Downloads/lab7to9-robot-tournament-main/Build2/Final Project Testing V2_Data/Mono/libSystem.dylib
+Fallback handler could not load library C:/Users/sooph/Downloads/lab7to9-robot-tournament-main/Build2/Final Project Testing V2_Data/Mono/libSystem.dylib.dll
+Fallback handler could not load library C:/Users/sooph/Downloads/lab7to9-robot-tournament-main/Build2/Final Project Testing V2_Data/Mono/libSystem.dylib
+Draw!
+Draw!
+Draw!
+Agent 2 wins by capture
+Agent 2 wins by carry
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+Agent 1 wins by capture
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+Agent 1 wins by capture
+Agent 1 wins by capture
+Agent 2 wins by capture
+Agent 1 wins by capture
+Agent 2 wins by carry
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+Agent 1 wins by capture
+Agent 2 wins by capture
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+Agent 1 wins by capture
+Agent 1 wins by carry
+Agent 2 wins by capture
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+Agent 1 wins by capture
+Agent 2 wins by capture
+Agent 2 wins by capture
+Agent 1 wins by carry
+Agent 1 wins by carry
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+Agent 1 wins by capture
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+Agent 1 wins by capture
+Agent 2 wins by carry
+Agent 2 wins by capture
+Agent 2 wins by capture
+Agent 1 wins by carry
+Agent 1 wins by carry
+Agent 1 wins by capture
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+Agent 2 wins by capture
+Agent 1 wins by capture
+Agent 2 wins by capture
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+Agent 1 wins by capture
+Agent 2 wins by capture
+Agent 2 wins by capture
+Agent 2 wins by carry
+Agent 1 wins by capture
+Draw!
+Agent 2 wins by carry
+Agent 2 wins by carry
+Agent 2 wins by capture
+KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <a1e9f114a6e64f4eacb529fc802ec93d>:0 
+  at JIHS.OnTriggerEnter (UnityEngine.Collider collision) [0x00068] in <0d41f861d6be40b492563ea743e7f4d4>:0 
+
+Agent 1 wins by capture
+Agent 1 wins by carry
+Agent 1 wins by capture
+Agent 1 wins by capture
+Agent 2 wins by carry
+Agent 1 wins by capture
+Agent 2 wins by carry
+Agent 1 wins by capture
+Agent 1 wins by carry
+Agent 1 wins by capture
+Agent 1 wins by capture
+Agent 2 wins by capture

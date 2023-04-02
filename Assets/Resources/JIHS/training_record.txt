@@ -1,4 +1,5 @@
 mlagents-learn config/agent_config.yaml --run-id=test1 --env="Build/Final Project Testing V2" --num-envs=2
+mlagents-learn config/agent_config.yaml --run-id=test9 --env="Build2/Final Project Testing V2" --num-envs=2
 
 gail in yaml: beat recorded version
 
@@ -18,6 +19,7 @@ https://github.com/gzrjzcx/ML-agents/blob/master/docs/Training-Imitation-Learnin
 test6 starts using GAIL (test3)
 test7 uses same GAIL (test3) and behavioural cloning (test3)
 test8 - GAIL + BC (both test3) + 2 envs, adjusted values since I noticed they weren't really bringing the balls back home (still -ve rewards...)
-Agent1.onnx is based on test8 - honestly not too bad? sometimes there's no movement whatsoever, doesn't bring balls back to base
+Agent.onnx is based on test8 - honestly not too bad? sometimes there's no movement whatsoever, doesn't bring balls back to base
 
 Build2 uses protect and offense incentives
+test9 - GAIL + BC (both test3) + 2 envs (ran into warning: Your environment contains multiple teams, but PPOTrainer doesn't support adversarial games. Enable self-play to train adversarial games.)
