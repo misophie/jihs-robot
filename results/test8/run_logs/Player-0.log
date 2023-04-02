@@ -1,0 +1,40 @@
+Mono path[0] = 'C:/Users/sooph/Downloads/lab7to9-robot-tournament-main/Build/Final Project Testing V2_Data/Managed'
+Mono config path = 'C:/Users/sooph/Downloads/lab7to9-robot-tournament-main/Build/MonoBleedingEdge/etc'
+Initialize engine version: 2020.3.44f1 (7f159b6136da)
+[Subsystems] Discovering subsystems at path C:/Users/sooph/Downloads/lab7to9-robot-tournament-main/Build/Final Project Testing V2_Data/UnitySubsystems
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) Iris(R) Plus Graphics (ID=0x8a5a)
+    Vendor:   
+    VRAM:     3967 MB
+    Driver:   31.0.101.1999
+Begin MonoManager ReloadAssembly
+- Completed reload, in  0.164 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.055200 ms
+Fallback handler could not load library C:/Users/sooph/Downloads/lab7to9-robot-tournament-main/Build/Final Project Testing V2_Data/Mono/libcoreclr.so
+Fallback handler could not load library C:/Users/sooph/Downloads/lab7to9-robot-tournament-main/Build/Final Project Testing V2_Data/Mono/libcoreclr.so.dll
+Fallback handler could not load library C:/Users/sooph/Downloads/lab7to9-robot-tournament-main/Build/Final Project Testing V2_Data/Mono/libcoreclr.so
+Fallback handler could not load library C:/Users/sooph/Downloads/lab7to9-robot-tournament-main/Build/Final Project Testing V2_Data/Mono/libdl.so
+Fallback handler could not load library C:/Users/sooph/Downloads/lab7to9-robot-tournament-main/Build/Final Project Testing V2_Data/Mono/libdl.so.dll
+Fallback handler could not load library C:/Users/sooph/Downloads/lab7to9-robot-tournament-main/Build/Final Project Testing V2_Data/Mono/libdl.so
+Fallback handler could not load library C:/Users/sooph/Downloads/lab7to9-robot-tournament-main/Build/Final Project Testing V2_Data/Mono/libSystem.dylib
+Fallback handler could not load library C:/Users/sooph/Downloads/lab7to9-robot-tournament-main/Build/Final Project Testing V2_Data/Mono/libSystem.dylib.dll
+Fallback handler could not load library C:/Users/sooph/Downloads/lab7to9-robot-tournament-main/Build/Final Project Testing V2_Data/Mono/libSystem.dylib
+Fallback handler could not load library C:/Users/sooph/Downloads/lab7to9-robot-tournament-main/Build/Final Project Testing V2_Data/Mono/libcoreclr.so
+Fallback handler could not load library C:/Users/sooph/Downloads/lab7to9-robot-tournament-main/Build/Final Project Testing V2_Data/Mono/libcoreclr.so.dll
+Fallback handler could not load library C:/Users/sooph/Downloads/lab7to9-robot-tournament-main/Build/Final Project Testing V2_Data/Mono/libcoreclr.so
+Fallback handler could not load library C:/Users/sooph/Downloads/lab7to9-robot-tournament-main/Build/Final Project Testing V2_Data/Mono/libdl.so
+Fallback handler could not load library C:/Users/sooph/Downloads/lab7to9-robot-tournament-main/Build/Final Project Testing V2_Data/Mono/libdl.so.dll
+Fallback handler could not load library C:/Users/sooph/Downloads/lab7to9-robot-tournament-main/Build/Final Project Testing V2_Data/Mono/libdl.so
+Fallback handler could not load library C:/Users/sooph/Downloads/lab7to9-robot-tournament-main/Build/Final Project Testing V2_Data/Mono/libSystem.dylib
+Fallback handler could not load library C:/Users/sooph/Downloads/lab7to9-robot-tournament-main/Build/Final Project Testing V2_Data/Mono/libSystem.dylib.dll
+Fallback handler could not load library C:/Users/sooph/Downloads/lab7to9-robot-tournament-main/Build/Final Project Testing V2_Data/Mono/libSystem.dylib
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 246c -> priority: 1 
+  Thread -> id: 62f4 -> priority: 1 
+  Thread -> id: 6b28 -> priority: 1 
+  Thread -> id: 500c -> priority: 1 

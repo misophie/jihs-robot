@@ -24,6 +24,9 @@ public class JIHS : CogsAgent
         LaserControl();
         // Movement based on DirToGo and RotateDir
         moveAgent(dirToGo, rotateDir);
+
+        // If in protect mode, incentivize hitting the enemy! pew pew
+        if (protect() && enemy.GetComponent<CogsAgent>().IsFrozen()) AddReward(rewardDict["protect-laser"]);
     }
 
 
@@ -144,10 +147,10 @@ public class JIHS : CogsAgent
             if (carriedTargets.Count > 0) {
                 AddReward(rewardDict["target-in-base"] * carriedTargets.Count);
             }
-            // else {
-            //     if (myBase.GetComponent<HomeBase>().GetCaptured() > targets.Length/2) AddReward(rewardDict["protect"]);
-            //     else AddReward(rewardDict["dropped-no-targets"]);
-            // }
+            else {
+                if (protect()) AddReward(rewardDict["protect"]);
+                else AddReward(rewardDict["offense-in-base"]);
+            }
 
         }
         base.OnTriggerEnter(collision);
@@ -161,7 +164,10 @@ public class JIHS : CogsAgent
         if (collision.gameObject.CompareTag("Target") && collision.gameObject.GetComponent<Target>().GetInBase() != GetTeam() && collision.gameObject.GetComponent<Target>().GetCarried() == 0 && !IsFrozen())
         {
             //Add rewards here
-            AddReward(rewardDict["targets-not-in-base"]);
+            // If in protect phase, give regular incentive
+            // If not in protect phase, give higher incentive to collect targets
+            if (!protect()) AddReward(rewardDict["targets-not-in-base"]);
+            else AddReward(rewardDict["offense-collecting-targets"]);
         }
 
         if (collision.gameObject.CompareTag("Wall"))
@@ -175,6 +181,12 @@ public class JIHS : CogsAgent
 
 
     //  --------------------------HELPERS---------------------------- 
+
+    // True if robot should protect (more than half of the targets are in base), false otherwise
+    private bool protect() {
+        return myBase.GetComponent<HomeBase>().GetCaptured() > targets.Length/2;
+    }
+
      private void AssignBasicRewards() {
         rewardDict = new Dictionary<string, float>();
 
@@ -186,8 +198,16 @@ public class JIHS : CogsAgent
         rewardDict.Add("touching-wall", -0.5f);
         rewardDict.Add("dropped-no-targets", 0.1f);
         rewardDict.Add("targets-not-in-base", 1f);
-        rewardDict.Add("target-in-base", 2f);
-        rewardDict.Add("get-out", -0.1f);
+        rewardDict.Add("target-in-base", 2.5f);
+        
+        // Rewards for protect and attack, 
+        // protect: incentivize staying at base and hitting opponents with a laser
+        // attack/offense: discourage staying at base and give higher rewards for collecting targets
+        rewardDict.Add("protect-in-base", 0.1f);
+        rewardDict.Add("protect-laser", 0.5f);
+        rewardDict.Add("offense-in-base", -0.2f);
+        rewardDict.Add("offense-collecting-targets", 2.5f);
+
     }
     
     private void MovePlayer(int forwardAxis, int rotateAxis, int shootAxis, int goToTargetAxis, int goToBaseAxis)
