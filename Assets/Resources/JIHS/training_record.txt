@@ -4,7 +4,7 @@ mlagents-learn config/agent_config.yaml --run-id=test11 --env="Build3/Final Proj
 mlagents-learn config/agent_config.yaml --run-id=test15 --env="Build4/Final Project Testing V2" --num-envs=2
 mlagents-learn config/agent_config.yaml --run-id=test16 --env="Build5/Final Project Testing V2" --num-envs=2 --no-graphics
 mlagents-learn config/agent_config.yaml --run-id=test18 --env="Build6/Final Project Testing V2" --num-envs=2 --no-graphics
-mlagents-learn config/agent_config.yaml --run-id=test19 --no-graphics
+mlagents-learn config/agent_config.yaml --run-id=test20 --env="Build7/Final Project Testing V2" --num-envs=2 --no-graphics
 
 tensorboard --logdir results --port 6006
 http://localhost:6006/
@@ -57,3 +57,4 @@ test18 - no GAIL and NC
 
 Build7 - self-play in config
 test19 - no GAIL and BC but with self-play
+test20 - test19 but with 2 envs

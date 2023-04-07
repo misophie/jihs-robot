@@ -158,11 +158,14 @@ public class JIHS : CogsAgent
             if (carriedTargets.Count > 0) {
                 // If there is less than 30 seconds left, get the targets back in base!
                 // if (timer.GetComponent<Timer>().GetTimeRemaining() < 30) AddReward(rewardDict["30s-left"] * carriedTargets.Count);
+                // Timer has a typo in its getter... its time remaning, not remaining :(
                 if (timer.GetComponent<Timer>().GetTimeRemaning() < 30) AddReward(rewardDict["30s-left"] * carriedTargets.Count);
                 else AddReward(rewardDict["target-in-base"] * carriedTargets.Count);
             }
             else {
+                // If protecting the base, give rewards for staying at the base
                 if (protect()) AddReward(rewardDict["protect-in-base"]);
+                // If not protecting, don't stay in base!
                 else AddReward(rewardDict["offense-in-base"]);
             }
 
@@ -230,7 +233,7 @@ public class JIHS : CogsAgent
         rewardDict.Add("30s-left", 5f);
 
         // negative reward for just holding targets
-        rewardDict.Add("held-targets", -0.2f);
+        rewardDict.Add("held-targets", -0.1f);
     }
     
     private void MovePlayer(int forwardAxis, int rotateAxis, int shootAxis, int goToTargetAxis, int goToBaseAxis)

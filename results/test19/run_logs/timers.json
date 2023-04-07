@@ -1,0 +1,49 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1680826228",
+        "python_version": "3.8.10 (tags/v3.8.10:3d8993a, May  3 2021, 11:48:03) [MSC v.1928 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\sooph\\AppData\\Local\\Programs\\Python\\Python38\\Scripts\\mlagents-learn config/agent_config.yaml --run-id=test19 --env=Build7/Final Project Testing V2 --num-envs=2 --no-graphics --resume",
+        "mlagents_version": "0.28.0",
+        "mlagents_envs_version": "0.28.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "1.7.1+cu110",
+        "numpy_version": "1.18.5",
+        "end_time_seconds": "1680826241"
+    },
+    "total": 12.839347900000002,
+    "count": 1,
+    "self": 1.6310214000000034,
+    "children": {
+        "run_training.setup": {
+            "total": 0.2959339999999999,
+            "count": 1,
+            "self": 0.2959339999999999
+        },
+        "TrainerController.start_learning": {
+            "total": 10.9123925,
+            "count": 1,
+            "self": 0.00015750000000025466,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 10.6840567,
+                    "count": 1,
+                    "self": 10.6840567
+                },
+                "TrainerController._save_models": {
+                    "total": 0.22817829999999972,
+                    "count": 1,
+                    "self": 0.0027172000000010854,
+                    "children": {
+                        "RLTrainer._checkpoint": {
+                            "total": 0.22546109999999864,
+                            "count": 1,
+                            "self": 0.22546109999999864
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
