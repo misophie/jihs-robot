@@ -1,5 +1,13 @@
 mlagents-learn config/agent_config.yaml --run-id=test1 --env="Build/Final Project Testing V2" --num-envs=2
-mlagents-learn config/agent_config.yaml --run-id=test10 --env="Build2/Final Project Testing V2" --num-envs=2    
+mlagents-learn config/agent_config.yaml --run-id=test10 --env="Build2/Final Project Testing V2" --num-envs=2   
+mlagents-learn config/agent_config.yaml --run-id=test11 --env="Build3/Final Project Testing V2" --num-envs=2 --no-graphics
+mlagents-learn config/agent_config.yaml --run-id=test15 --env="Build4/Final Project Testing V2" --num-envs=2
+mlagents-learn config/agent_config.yaml --run-id=test16 --env="Build5/Final Project Testing V2" --num-envs=2 --no-graphics
+mlagents-learn config/agent_config.yaml --run-id=test18 --env="Build6/Final Project Testing V2" --num-envs=2 --no-graphics
+mlagents-learn config/agent_config.yaml --run-id=test19 --no-graphics
+
+tensorboard --logdir results --port 6006
+http://localhost:6006/
 
 gail in yaml: beat recorded version
 
@@ -25,3 +33,27 @@ Build2 uses protect and offense incentives
 test9 - GAIL + BC (both test3) + 2 envs (ran into warning: Your environment contains multiple teams, but PPOTrainer doesn't support adversarial games. Enable self-play to train adversarial games.)
 test10 - GAIL + BC (both test3) + 2 envs (offense-collecting-targets = 1.5, test9 had 2.5, redefined protect to make sure there's no targets that aren't in a base)
 Agent1.onnx is based on test9 - worse than Agent.onnx, wasn't trained too long
+
+Build3 uses protect and offense incentives (tweaks to definition of when to protect and do offense to only happen once all targets are in a base)
+test7 (GAIL recording) playing against TA example prefab, ended at 1 min, still not as good reward as test3 GAIL demo
+test11 - GAIL + BC (both test3) + 2 envs 
+Agent2.onnx is based on test11 - trained for 5150000 time steps and it sucks (probably overfitted...)
+
+Build4 protect and offense + bring targets back when < 30s?
+test12 - no GAIL or BC
+test13 - no Gail or BC (just realized the offense/defense rewards for collecting are flipped...) - when you don't build the project... it seems to train asymmetrically?
+test14 - no GAIL or BC + 2 envs
+test15 - no GAIL or BC (still flipped, actually fixed it this time)
+Agent3.onnx is based on test15 - mid training, replace when done
+
+we got nuked :(, lost so many files from a rollback
+
+Build5 uses protect and offense + >30s + don't hold onto targets for ages
+test16 - GAIL and BC
+
+Build6 same thing, but forgot to change models
+test17 - GAIL and BC
+test18 - no GAIL and NC
+
+Build7 - self-play in config
+test19 - no GAIL and BC but with self-play

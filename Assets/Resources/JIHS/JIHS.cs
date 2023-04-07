@@ -5,6 +5,16 @@ using Unity.MLAgents;
 using Unity.MLAgents.Sensors;
 using Unity.MLAgents.Actuators;
 
+// At the beginning, we employ a more offensive approach: 
+// collect the closest balls and return the balls to the base. 
+// If the number of balls that are in our base are over half the total amount of balls 
+// (i.e. once we hit 5 balls in the base), 
+// the strategy of our robot would then switch to a more defensive play. 
+// Now the robot has a goal of defending its base by shooting lasers.
+// If we have less than half the total amounts of balls in our base, we stick to the offensive approach.
+// We also want the robot to drop off any targets its holding when there's 30 seconds or less.
+// We also teach it to not hold onto targets for too long.
+
 public class JIHS : CogsAgent
 {
     // ------------------BASIC MONOBEHAVIOR FUNCTIONS-------------------
@@ -27,6 +37,10 @@ public class JIHS : CogsAgent
 
         // If in protect mode, incentivize hitting the enemy! pew pew
         if (protect() && enemy.GetComponent<CogsAgent>().IsFrozen()) AddReward(rewardDict["protect-laser"]);
+
+        // If carrying targets, reward it very slightly negatively... bring it back to base!
+        AddReward(rewardDict["held-targets"] * carriedTargets.Count);
+
     }
 
 
@@ -115,8 +129,6 @@ public class JIHS : CogsAgent
         // What to do when an action is received (i.e. when the Brain gives the agent information about possible actions)
         public override void OnActionReceived(ActionBuffers actions){
 
-        
-
         int forwardAxis = (int)actions.DiscreteActions[0]; //NN output 0
 
         //TODO-1: Set these variables to their appopriate item from the act list
@@ -138,17 +150,19 @@ public class JIHS : CogsAgent
     // Called when object collides with or trigger (similar to collide but without physics) other objects
     protected override void OnTriggerEnter(Collider collision)
     {
-        
 
         
         if (collision.gameObject.CompareTag("HomeBase") && collision.gameObject.GetComponent<HomeBase>().team == GetTeam())
         {
             // Add rewards here
             if (carriedTargets.Count > 0) {
-                AddReward(rewardDict["target-in-base"] * carriedTargets.Count);
+                // If there is less than 30 seconds left, get the targets back in base!
+                // if (timer.GetComponent<Timer>().GetTimeRemaining() < 30) AddReward(rewardDict["30s-left"] * carriedTargets.Count);
+                if (timer.GetComponent<Timer>().GetTimeRemaning() < 30) AddReward(rewardDict["30s-left"] * carriedTargets.Count);
+                else AddReward(rewardDict["target-in-base"] * carriedTargets.Count);
             }
             else {
-                if (protect()) AddReward(rewardDict["protect"]);
+                if (protect()) AddReward(rewardDict["protect-in-base"]);
                 else AddReward(rewardDict["offense-in-base"]);
             }
 
@@ -166,7 +180,7 @@ public class JIHS : CogsAgent
             //Add rewards here
             // If in protect phase, give regular incentive
             // If not in protect phase, give higher incentive to collect targets
-            if (!protect()) AddReward(rewardDict["targets-not-in-base"]);
+            if (protect()) AddReward(rewardDict["targets-not-in-base"]);
             else AddReward(rewardDict["offense-collecting-targets"]);
         }
 
@@ -182,12 +196,11 @@ public class JIHS : CogsAgent
 
     //  --------------------------HELPERS---------------------------- 
 
-    // True if robot should protect (more than half of the targets are in base), false otherwise
+    // True if robot should protect (more than half of the targets are in base) AND all balls are in a base, false otherwise
     private bool protect() {
         bool targetNotInBase = false;
         foreach (GameObject target in targets) {
-            // !!! not sure if its 0, double check
-            if (collision.gameObject.GetComponent<Target>().GetInBase() != 0) targetNotInBase = true;
+            if (target.gameObject.GetComponent<Target>().GetInBase() != 0) targetNotInBase = true;
         }
         return myBase.GetComponent<HomeBase>().GetCaptured() > targets.Length/2 && !targetNotInBase;
     }
@@ -213,6 +226,11 @@ public class JIHS : CogsAgent
         rewardDict.Add("offense-in-base", -0.2f);
         rewardDict.Add("offense-collecting-targets", 1.5f);
 
+        // high reward for getting targets back in the last 30s
+        rewardDict.Add("30s-left", 5f);
+
+        // negative reward for just holding targets
+        rewardDict.Add("held-targets", -0.2f);
     }
     
     private void MovePlayer(int forwardAxis, int rotateAxis, int shootAxis, int goToTargetAxis, int goToBaseAxis)
